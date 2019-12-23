@@ -50,7 +50,7 @@
                         <label for="phno">Mobile No. : <span class="text-red">*</span></label>
                     </div>
                     <div class="col-md-1 col-sm-4">
-                        <select class="form-control" name="country_code" style="width:100px" ng-model="country_code" ng-options="x as x for x in country_code_dropdown" required>
+                        <select class="form-control" name="country_code" style="width:150px" ng-model="country_code" ng-options="x.Code as x.Code+'( '+x.Name+' )' for x in country_code_dropdown" required>
                           <option value="" disabled>COUNTRY CODE</option>
                         </select>
                     </div>

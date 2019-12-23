@@ -63,20 +63,14 @@ input:checked + .slider:before {
 .slider.round:before {
   border-radius: 50%;
 }
-
-.bg-image {
-  /* The image used */
-  background-image: url("bg.jpg");
-
-  /* Add the blur effect */
-  filter: blur(8px);
-  -webkit-filter: blur(8px);
-
-  /* Full height */
-  height: 100%;
-
-  /* Center and scale the image nicely */
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
+.back-color{
+  background-color:#edfcfc;
+}
+.footer {
+   position: fixed;
+   left: 0;
+   bottom: 15px;
+   width: 100%;
+   background-color:#e6e8e6;
+   text-align: center;
 }
