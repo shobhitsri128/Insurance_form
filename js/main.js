@@ -82,7 +82,7 @@ app.controller('BuyInsuranceController', function($scope, $state, COUNTRY_CODE) 
             Swal.fire('Warning', 'No insurance premium available at this age', 'warning');
         } else {
             var premium_pre = ($scope.age - 20) * 2;
-            if($scope.smoking==undefined || $scope.smoking=='No')
+            if($scope.smoking==undefined || $scope.smoking==false)
               $scope.premium = 2000 + 2000 * premium_pre / 100;
             else {
               $scope.premium = 2000 + 2000 * premium_pre / 100;
